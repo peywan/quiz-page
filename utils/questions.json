@@ -1,0 +1,246 @@
+{
+    "response_code": 0,
+    "results": [
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Video Games",
+        "question": "What was the first video game in the Batman \"Arkham\" series?",
+        "correct_answer": "Arkham Asylum",
+        "incorrect_answers": [
+          "Arkham Knight",
+          "Arkham City",
+          "Arkham Origins"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "History",
+        "question": "Abolitionist John Brown raided the arsenal in which Virginia Town?",
+        "correct_answer": "Harper's Ferry",
+        "incorrect_answers": [
+          "Richmond",
+          "Harrisonburg",
+          "Martinsburg"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Board Games",
+        "question": "How many dice are used in the game of Yahtzee?",
+        "correct_answer": "Five",
+        "incorrect_answers": [
+          "Four",
+          "Six",
+          "Eight"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Video Games",
+        "question": "Which franchise does the creature \"Slowpoke\" originate from?",
+        "correct_answer": "Pokemon",
+        "incorrect_answers": [
+          "Dragon Ball",
+          "Sonic The Hedgehog",
+          "Yugioh"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Video Games",
+        "question": "Which of the following weapons in \"Counter-Strike: Global Offensive\" does not have a right-click function?",
+        "correct_answer": "XM1014",
+        "incorrect_answers": [
+          "SG553",
+          "R8 Revolver",
+          "USP-S"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "Which noble gas has the lowest atomic number?",
+        "correct_answer": "Helium",
+        "incorrect_answers": [
+          "Neon",
+          "Argon",
+          "Krypton"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "Which of the following card games revolves around numbers and basic math?",
+        "correct_answer": "Uno",
+        "incorrect_answers": [
+          "Go Fish",
+          "Twister",
+          "Munchkin"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Film",
+        "question": "Who starred as Bruce Wayne and Batman in Tim Burton's 1989 movie \"Batman\"?",
+        "correct_answer": "Michael Keaton",
+        "incorrect_answers": [
+          "George Clooney",
+          "Val Kilmer",
+          "Adam West"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Television",
+        "question": "Who played the Waitress in the Spam sketch of \"Monty Python's Flying Circus\"?",
+        "correct_answer": "Terry Jones",
+        "incorrect_answers": [
+          "Eric Idle",
+          "Graham Chapman",
+          "John Cleese"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Music",
+        "question": "Who is the lead singer of the band Coldplay?",
+        "correct_answer": "Chris Martin",
+        "incorrect_answers": [
+          "Chris Isaak",
+          "Chris Wallace",
+          "Chris Connelly"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science: Computers",
+        "question": "What amount of bits commonly equals one byte?",
+        "correct_answer": "8",
+        "incorrect_answers": [
+          "1",
+          "2",
+          "64"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Video Games",
+        "question": "Who is the main antagonist in the Portal franchise?",
+        "correct_answer": "GLaDOS",
+        "incorrect_answers": [
+          "Chell",
+          "Wheatley",
+          "Rick"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "What lies at the center of our galaxy?",
+        "correct_answer": "A black hole",
+        "incorrect_answers": [
+          "A wormhole",
+          "A supernova",
+          "A quasar"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Sports",
+        "question": "Who is often called \"the Maestro\" in the men's tennis circuit?",
+        "correct_answer": "Roger Federer",
+        "incorrect_answers": [
+          "Bill Tilden",
+          "Boris Becker",
+          "Pete Sampras"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Music",
+        "question": "\"The Singing Cowboy\" Gene Autry is credited with the first recording for all but which classic Christmas jingle?",
+        "correct_answer": "White Christmas",
+        "incorrect_answers": [
+          "Frosty the Snowman",
+          "Rudolph the Red-Nosed Reindeer",
+          "Here Comes Santa Claus"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entertainment: Film",
+        "question": "For the film \"Raiders of The Lost Ark\", what was Harrison Ford sick with during the filming of the Cairo chase?",
+        "correct_answer": "Dysentery",
+        "incorrect_answers": [
+          "Anemia",
+          "Constipation",
+          "Acid Reflux "
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "History",
+        "question": "In 1453, which important city fell?",
+        "correct_answer": "Constantinople",
+        "incorrect_answers": [
+          "Rome",
+          "Hamburg",
+          "Athens"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "What do the letters of the fast food chain KFC stand for?",
+        "correct_answer": "Kentucky Fried Chicken",
+        "incorrect_answers": [
+          "Kentucky Fresh Cheese",
+          "Kibbled Freaky Cow",
+          "Kiwi Food Cut"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Sports",
+        "question": "Which of the following sports is not part of the triathlon?",
+        "correct_answer": "Horse-Riding",
+        "incorrect_answers": [
+          "Cycling",
+          "Swimming",
+          "Running"
+        ]
+      },
+      {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "Which Apollo mission was the first one to land on the Moon?",
+        "correct_answer": "Apollo 11",
+        "incorrect_answers": [
+          "Apollo 10",
+          "Apollo 9",
+          "Apollo 13"
+        ]
+      }
+    ]
+  }
+  

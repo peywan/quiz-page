@@ -2,4 +2,29 @@ api nyckel: https://opentdb.com/api.php?amount=20&difficulty=easy&type=multiple
 
 uppgifter att dela ihop?! vem tar vad?
 
+To-Do List for the Team
+1: Set Up the Project Structure
 
+* Create the context directory and add QuizContext.js.
+
+* Create the utils directory for utility functions like fetching questions. 
+
+2: API Integration
+
+* Use the provided function in utils/fetchQuestions.js to load questions into your global state.
+
+
+3: Implement Quiz Logic
+* Design and implement the quiz logic using the global state to track questions and answers.
+
+4: Create Quiz and Admin Pages
+* Use Next.js routing to create at least two pages: Admin for managing questions and Quiz for taking the quiz.
+
+5: Styling and Responsiveness
+* Ensure the application is responsive and has a user-friendly interface.
+
+6: Testing and Debugging
+* Test the application thoroughly and debug any issues that arise.
+
+7: Deployment
+* Prepare the application for deployment and deploy it to a hosting service like Vercel.
