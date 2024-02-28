@@ -1,26 +1,46 @@
-// src/pages/index.js
-import React, { useEffect, useState } from 'react';
-import { fetchQuestions } from '../../utils/fetchQuestions'; // Justera sökvägen baserat på din projektmappstruktur
+// This will be the Quiz page that the user will see
 
-export default function Home() {
-  const [questions, setQuestions] = useState([]);
+import Quiz from "../../components/quiz";
+//This is some hardcoded questions just for testing (remove later)
+const questions = [
+  {
+    questionText: "What is the capital of France?",
+    answerOptions: [
+      { answerText: "New York", isCorrect: false },
+      { answerText: "London", isCorrect: false },
+      { answerText: "Paris", isCorrect: true },
+      { answerText: "Dublin", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What is the capital of France?",
+    answerOptions: [
+      { answerText: "New York", isCorrect: false },
+      { answerText: "London", isCorrect: false },
+      { answerText: "Paris", isCorrect: true },
+      { answerText: "Dublin", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What is the capital of France?",
+    answerOptions: [
+      { answerText: "New York", isCorrect: false },
+      { answerText: "London", isCorrect: false },
+      { answerText: "Paris", isCorrect: true },
+      { answerText: "Dublin", isCorrect: false },
+    ],
+  },
+];
 
-  useEffect(() => {
-    const getQuestions = async () => {
-      try {
-        const data = await fetchQuestions();
-        setQuestions(data);
-      } catch (error) {
-        console.error("Failed to fetch questions:", error);
-      }
-    };
-
-    getQuestions();
-  }, []); // En tom beroendearray säkerställer att effekten endast körs en gång
-
+const QuizPage = () => {
   return (
-    <div>
-      {/* Render your questions here */}
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <h1 className="text-3xl font-bold text-center mb-6">Quiz Page</h1>
+        <Quiz questions={questions} />
+      </div>
     </div>
   );
-}
+};
+
+export default QuizPage;
