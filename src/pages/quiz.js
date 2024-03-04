@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //import { quiz } from "../data.js";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { setActiveQuestion } from "@/redux/questions";
 
 //Hämtat data
@@ -8,7 +8,7 @@ import { setActiveQuestion } from "@/redux/questions";
 
 const page = () => {
   //const [activeQuestion, setActiveQuestion] = useState(0); //Topic for next time, setter och en getter i redux istället för lokal state
-  const [selectedAnswer, setSelectedAnswer] = useState("");
+  const [selectedAnswer, setSelectedAnswer] = useState(""); //
   const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [showResult, setShowResult] = useState(false);
@@ -18,7 +18,11 @@ const page = () => {
     wrongAnswers: 0,
   });
 
+  const dispatch = useDispatch();
+
   const reduxQuestions = useSelector((state) => state.questions);
+
+  //hämta och sätta data
 
   const activeQuestion = useSelector((state) => state.questions.activeQuestion);
   //debugger;
@@ -59,10 +63,10 @@ const page = () => {
           }
     );
     if (activeQuestion !== questions.length - 1) {
-      debugger;
-      setActiveQuestion((prev) => prev + 1);
+      dispatch(setActiveQuestion(activeQuestion + 1))
+      //setActiveQuestion((prev) => prev + 1);
     } else {
-      setActiveQuestion(0);
+      dispatch(setActiveQuestion(0));
       setShowResult(true);
     }
     setChecked(false);

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { nanoid } from "@reduxjs/toolkit";
 import { quiz } from "../data";
-debugger;
+//debugger;
 export const questionSlice = createSlice({
   name: "questions",
   //sparar frågorna i state
@@ -15,9 +15,9 @@ export const questionSlice = createSlice({
       };
       state.push(newQuestion);
     },
-  },
-  setActiveQuestion: (state, action) => {
-    debugger;
+    setActiveQuestion: (state, action) => {
+      state.activeQuestion = action.payload;
+    },
   },
 });
 
