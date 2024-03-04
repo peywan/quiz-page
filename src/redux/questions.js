@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { nanoid } from "@reduxjs/toolkit";
 import { quiz } from "../data";
-
+debugger;
 export const questionSlice = createSlice({
   name: "questions",
   //sparar frågorna i state
-  initialState: { questions: quiz },
-
+  initialState: { questions: quiz, activeQuestion: 0 },
+  //skapa olika metoder för förändra state
   reducers: {
     addQuestion: (state, action) => {
       const newQuestion = {
@@ -16,8 +16,11 @@ export const questionSlice = createSlice({
       state.push(newQuestion);
     },
   },
+  setActiveQuestion: (state, action) => {
+    debugger;
+  },
 });
 
-export const { addQuestion } = questionSlice.actions;
+export const { addQuestion, setActiveQuestion } = questionSlice.actions;
 
 export default questionSlice.reducer;

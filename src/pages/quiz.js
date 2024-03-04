@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 //import { quiz } from "../data.js";
 import { useSelector } from "react-redux";
+import { setActiveQuestion } from "@/redux/questions";
 
 //Hämtat data
 //Nästa gång, hämta och seta data
 
 const page = () => {
-  const [activeQuestion, setActiveQuestion] = useState(0); //Topic for next time, setter och en getter i redux istället för lokal state
+  //const [activeQuestion, setActiveQuestion] = useState(0); //Topic for next time, setter och en getter i redux istället för lokal state
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
@@ -19,10 +20,13 @@ const page = () => {
 
   const reduxQuestions = useSelector((state) => state.questions);
 
+  const activeQuestion = useSelector((state) => state.questions.activeQuestion);
+  //debugger;
+
   //  const { questions } = quiz;
   const { questions } = reduxQuestions.questions;
   const { question, answers, correctAnswer } = questions[activeQuestion];
-  debugger;
+  //debugger;
 
   //   Select and check answer
   const onAnswerSelected = (answer, idx) => {
@@ -55,6 +59,7 @@ const page = () => {
           }
     );
     if (activeQuestion !== questions.length - 1) {
+      debugger;
       setActiveQuestion((prev) => prev + 1);
     } else {
       setActiveQuestion(0);
