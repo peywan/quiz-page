@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { nanoid } from "@reduxjs/toolkit";
+import { quiz } from "../data";
 
 export const questionSlice = createSlice({
   name: "questions",
-  initialState: [],
+  //sparar frågorna i state
+  initialState: { questions: quiz },
 
   reducers: {
     addQuestion: (state, action) => {

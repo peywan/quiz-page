@@ -1,8 +1,12 @@
 import React, { useState } from "react";
-import { quiz } from "../data.js";
+//import { quiz } from "../data.js";
+import { useSelector } from "react-redux";
+
+//Hämtat data
+//Nästa gång, hämta och seta data
 
 const page = () => {
-  const [activeQuestion, setActiveQuestion] = useState(0);
+  const [activeQuestion, setActiveQuestion] = useState(0); //Topic for next time, setter och en getter i redux istället för lokal state
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
@@ -13,8 +17,12 @@ const page = () => {
     wrongAnswers: 0,
   });
 
-  const { questions } = quiz;
+  const reduxQuestions = useSelector((state) => state.questions);
+
+  //  const { questions } = quiz;
+  const { questions } = reduxQuestions.questions;
   const { question, answers, correctAnswer } = questions[activeQuestion];
+  debugger;
 
   //   Select and check answer
   const onAnswerSelected = (answer, idx) => {
@@ -28,6 +36,8 @@ const page = () => {
       console.log("false");
     }
   };
+
+  //debugger;
 
   // Calculate score and increment to next question
   const nextQuestion = () => {
